@@ -226,4 +226,4 @@ This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENS
 
 ## Acknowledgements
 
-Special thanks to @mtrampont for providing exceptionally valuable feedback.
+Special thanks to [Mathieu Trampont](https://github.com/mtrampont) for providing exceptionally valuable feedback.
