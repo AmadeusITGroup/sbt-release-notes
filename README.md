@@ -84,7 +84,7 @@ $NEXT_VERSION
 
 ### Activate the plugin
 
-In you `project/plugins.sbt` add:
+In your `project/plugins.sbt` add:
 
 ```scala
 addSbtPlugin("io.github.generoso" % "sbt-release-notes" % <version>)
