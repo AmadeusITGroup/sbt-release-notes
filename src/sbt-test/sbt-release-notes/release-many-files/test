@@ -1,0 +1,9 @@
+$ exec git init -q .
+$ exec git checkout -b main
+$ exec git add .
+$ exec git commit -m init
+
+> reload
+
+> 'release with-defaults'
+$ must-mirror release-notes.md expected.md

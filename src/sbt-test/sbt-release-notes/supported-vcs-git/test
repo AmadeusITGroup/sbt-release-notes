@@ -1,0 +1,8 @@
+# not a git directory (no vcs)
+-> releaseNotesDraft
+
+$ mkdir .hg
+
+# not a git directory (hg)
+-> releaseNotesDraft
+

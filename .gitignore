@@ -1,0 +1,25 @@
+# Scala
+*.class
+*.log
+.bsp/
+
+# issue with coursier cache directory
+null/
+
+# IntelliJ
+.idea
+
+# Eclipse
+.cache-main
+.cache-tests
+.classpath
+.project
+.settings/
+
+# VS code
+.metals/
+.vscode/
+
+# Project
+target
+project/target

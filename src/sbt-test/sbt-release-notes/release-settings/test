@@ -1,0 +1,31 @@
+$ exec git init -q .
+$ exec git checkout -b mymain
+$ exec git add .
+$ exec git commit -m init
+
+> reload
+
+$ exec git checkout -b mybranch
+$ touch file1
+$ exec git add .
+#only this commit will be in the release notes
+$ exec git commit -am "[mytag] added file2"
+
+$ touch file2
+$ exec git add .
+$ exec git commit -am "ignored commit 1"
+
+$ touch file3
+$ exec git add .
+$ exec git commit -am "ignored commit 2"
+
+> releaseNotesDraft
+$ exists drafts/release-notes-custom/release_mybranch.md
+$ exec git add .
+$ exec git commit -m release-notes
+
+> 'release with-defaults'
+$ absent drafts/release-notes-custom/release_mybranch.md
+$ must-mirror release/release-notes-custom.md expected.md
+
+> checkMessage

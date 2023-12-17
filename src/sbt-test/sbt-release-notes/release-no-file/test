@@ -1,0 +1,12 @@
+$ exec git init -q .
+$ exec git checkout -b main
+$ exec git add .
+$ exec git commit -m init
+
+> reload
+
+> set releaseNotesFailIfNotUpdated := true
+-> 'release with-defaults'
+
+> set releaseNotesFailIfNotUpdated := false
+> 'release with-defaults'
