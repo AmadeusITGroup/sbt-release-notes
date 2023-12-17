@@ -96,7 +96,7 @@ object ReleaseNotesTransformations {
     }
   }
 
-  def matches(regex: Regex, s: String): Boolean =
+  private def matches(regex: Regex, s: String): Boolean =
     regex.pattern.matcher(s).matches
 
 }
