@@ -1,4 +1,6 @@
 $ exec git init -q .
+$ exec git config --global user.email "you@example.com"
+$ exec git config --global user.name "Your Name"
 $ exec git checkout -b mymain
 $ exec git add .
 $ exec git commit -m init
