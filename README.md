@@ -1,5 +1,7 @@
 # sbt-release-notes 
 
+![CI](https://github.com/generoso/sbt-plugin-shell/workflows/CI/badge.svg)
+
 ## Overview
 
 This plugin provides a Release Step for [sbt-release](https://github.com/sbt/sbt-release/) to automatically update the release notes file.
