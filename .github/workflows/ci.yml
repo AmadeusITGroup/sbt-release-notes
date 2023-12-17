@@ -27,6 +27,13 @@ jobs:
     - name: Run tests and generate coverage report
       run: sbt coverageOn scripted coverageReport
 
+    - name: Upload coverage reports to Codecov
+      uses: codecov/codecov-action@eaaf4bedf32dbdc6b720b63067d99c4d77d6047d # v3.1.4
+      with:
+        token: ${{ secrets.CODECOV_TOKEN }}
+        files: target/scala-2.12/sbt-1.0/coverage-report/cobertura.xml
+        verbose: true
+
       # This step uploads information to the GitHub dependency graph and unlocks Dependabot alerts for the repository
     - name: Upload dependency graph
       uses: scalacenter/sbt-dependency-submission@6807cf91e9dc7af7c314b988d56d928d5828605b # v2.2.2
