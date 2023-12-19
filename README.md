@@ -1,6 +1,6 @@
 # sbt-release-notes 
 
-![CI](https://github.com/generoso/sbt-plugin-shell/workflows/CI/badge.svg)
+[![CI](https://github.com/AmadeusITGroup/sbt-release-notes/actions/workflows/ci.yml/badge.svg)](https://github.com/AmadeusITGroup/sbt-release-notes/actions/workflows/ci.yml)
 [![codecov](https://codecov.io/gh/AmadeusITGroup/sbt-release-notes/graph/badge.svg?token=X7uHgfmZir)](https://codecov.io/gh/AmadeusITGroup/sbt-release-notes)
 
 ## Overview
