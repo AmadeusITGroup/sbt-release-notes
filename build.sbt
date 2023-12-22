@@ -1,7 +1,7 @@
 enablePlugins(SbtPlugin)
 
 organization := "io.github.generoso"
-homepage := Some(url("https://github.com/generoso/sbt-release-notes"))
+homepage := Some(url("https://github.com/AmadeusITGroup/sbt-release-notes"))
 licenses := List("Apache-2.0" -> url("http://www.apache.org/licenses/LICENSE-2.0"))
 developers := List(
   Developer(
