@@ -28,7 +28,7 @@ scalacOptions := Seq(
 )
 
 // sbt plugin dependencies
-addSbtPlugin("com.github.sbt" % "sbt-release" % "1.3.0")
+addSbtPlugin("com.github.sbt" % "sbt-release" % "1.4.0")
 
 // scripted tests configuration
 scriptedBufferLog := false
