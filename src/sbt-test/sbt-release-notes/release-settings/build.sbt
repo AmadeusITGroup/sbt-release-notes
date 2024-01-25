@@ -33,5 +33,6 @@ val releaseSettings = Seq(
   releaseNotesFailIfNotUpdated := true,
   releaseNotesDraftCommitRegexes := Seq(""".*\[mytag\].*""").map(_.r),
   releaseNotesBranch := "mymain",
-  releaseNotesUpdate / releaseNotesUpdateCommitMessage := s"This is a custom commit message for version ${(ThisBuild / version).value}"
+  releaseNotesUpdate / releaseNotesUpdateCommitMessage := s"This is a custom commit message for version ${(ThisBuild / version).value}",
+  releaseVersionBump := sbtrelease.Version.Bump.NextStable
 )
