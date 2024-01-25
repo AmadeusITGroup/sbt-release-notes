@@ -18,5 +18,6 @@ val releaseSettings = Seq(
     commitReleaseVersion,
     updateReleaseNotes
   ),
-  releaseNotesFailIfNotUpdated := true
+  releaseNotesFailIfNotUpdated := true,
+  releaseVersionBump := sbtrelease.Version.Bump.NextStable
 )
