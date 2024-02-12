@@ -36,5 +36,5 @@ jobs:
 
       # This step uploads information to the GitHub dependency graph and unlocks Dependabot alerts for the repository
     - name: Upload dependency graph
-      uses: scalacenter/sbt-dependency-submission@6807cf91e9dc7af7c314b988d56d928d5828605b # v2.2.2
+      uses: scalacenter/sbt-dependency-submission@845d240d249307bc506cb9cbe273ecadec350d07 # v2.3.0
       if: github.event_name != 'pull_request'
