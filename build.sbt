@@ -14,7 +14,7 @@ developers := List(
 
 name := "sbt-release-notes"
 versionScheme := Some("semver-spec")
-scalaVersion := "2.12.19"
+scalaVersion := "2.13.13"
 
 scalacOptions := Seq(
   "-encoding",

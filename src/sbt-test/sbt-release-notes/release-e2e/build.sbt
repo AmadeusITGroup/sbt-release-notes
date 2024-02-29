@@ -6,7 +6,7 @@ import scala.sys.process.Process
 lazy val root = (project in file("."))
   .settings(
     version := "0.0.1",
-    scalaVersion := "2.12.19",
+    scalaVersion := "2.13.13",
     releaseSettings,
     TaskKey[Unit]("checkMessage") := {
       val process = Process("git", Seq("log", "-1", "--pretty=%B"))
