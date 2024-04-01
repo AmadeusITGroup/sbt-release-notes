@@ -61,7 +61,7 @@ object ReleaseNotesTransformations {
   }
 
   private def extractNewContent(draftFiles: Array[File]): String = {
-    val fileContents = draftFiles.map { file =>
+    val fileContents = draftFiles.sortBy(_.getName).map { file =>
       val source = Source.fromFile(file)
       val content = source.getLines().mkString("\n").trim.stripLineEnd
       source.close()
