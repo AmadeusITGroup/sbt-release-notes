@@ -82,7 +82,8 @@ object ReleaseNotesTransformations {
     val changes = Regex.quoteReplacement(releaseCommits.map(c => s"- $c").mkString("\n"))
     val draftContent = releaseNotesDraftTemplate.value.replaceFirst(Regex.quoteReplacement("$CHANGES"), changes)
     // write draft content in release file
-    val releaseNotesDraftFileName = s"release_${vcs.currentBranch}.md"
+    val sanitizedBranchName = vcs.currentBranch.replaceAll("/", "-")
+    val releaseNotesDraftFileName = s"release_${sanitizedBranchName}.md"
     val releaseNotesDraftFile = releaseNotesDraftFolder.value / releaseNotesDraftFileName
     val writer = new PrintWriter(releaseNotesDraftFile)
     writer.write(draftContent)
