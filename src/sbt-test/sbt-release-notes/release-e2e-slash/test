@@ -1,0 +1,24 @@
+$ exec git init -q .
+$ exec git config --global user.email "you@example.com"
+$ exec git config --global user.name "Your Name"
+$ exec git checkout -b main
+$ exec git add .
+$ exec git commit -m init
+
+> reload
+
+$ exec git checkout -b feature/mybranch
+$ touch file2
+$ exec git add file2
+$ exec git commit -am "added file2"
+
+> releaseNotesDraft
+$ exists release-notes/release_feature-mybranch.md
+$ exec git add .
+$ exec git commit -m release-notes
+
+> 'release with-defaults'
+$ absent release-notes/release_feature-mybranch.md
+$ must-mirror release-notes.md expected.md
+
+> checkMessage
