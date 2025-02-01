@@ -24,6 +24,9 @@ jobs:
         distribution: 'temurin'
         cache: 'sbt'
 
+    - name: Setup sbt launcher
+      uses: sbt/setup-sbt@96cf3f09dc501acdad7807fffe97dba9fa0709be # v1.1.5
+
     - name: Run tests and generate coverage report
       run: sbt coverageOn scripted coverageReport
 
