@@ -40,6 +40,3 @@ coverageMinimumStmtTotal := 100
 coverageMinimumBranchTotal := 100
 coverageExcludedPackages := ""
 
-// sonatype releasing
-ThisBuild / sonatypeCredentialHost := "s01.oss.sonatype.org"
-sonatypeRepository := "https://s01.oss.sonatype.org/service/local"
