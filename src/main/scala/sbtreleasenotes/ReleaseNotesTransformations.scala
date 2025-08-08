@@ -88,7 +88,7 @@ object ReleaseNotesTransformations {
     val writer = new PrintWriter(releaseNotesDraftFile)
     writer.write(draftContent)
     writer.close()
-    println(s"Release-notes draft file created: $releaseNotesDraftFile")
+    streams.value.log.info(s"Release-notes draft file created: $releaseNotesDraftFile")
     releaseNotesDraftFile
   }
 
