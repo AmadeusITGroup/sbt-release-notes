@@ -51,11 +51,11 @@ object ReleaseNotesPlugin extends AutoPlugin {
 
   override lazy val buildSettings: Seq[Setting[_]] = Seq(
     releaseNotesFile := baseDirectory.value / "release-notes.md",
-    releaseNotesDraftFolder := baseDirectory.value / "release-notes"
+    releaseNotesDraftFolder := baseDirectory.value / "release-notes",
+    releaseNotesDraft := draftReleaseNotesTask.value
   )
 
-  override lazy val projectSettings = Seq(
-    releaseNotesDraft := draftReleaseNotesTask.value,
+  override lazy val projectSettings: Seq[Setting[_]] = Seq(
     releaseNotesUpdate := updateReleaseNotesTask.value,
     releaseNotesUpdate / releaseNotesUpdateCommitMessage := s"Update release notes for version ${version.value}"
   )
