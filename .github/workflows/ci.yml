@@ -25,7 +25,7 @@ jobs:
         cache: 'sbt'
 
     - name: Setup sbt launcher
-      uses: sbt/setup-sbt@3e125ece5c3e5248e18da9ed8d2cce3d335ec8dd # v1.1.14
+      uses: sbt/setup-sbt@1cad58d595b729a71ca2254cdf5b43dd6f42d4bb # v1.1.18
 
     - name: Run tests and generate coverage report
       run: sbt coverageOn scripted coverageReport
