@@ -1,6 +1,7 @@
 # Scala
 *.class
 *.log
+.bloop/
 .bsp/
 
 # issue with coursier cache directory
@@ -18,6 +19,7 @@ null/
 
 # VS code
 .metals/
+metals.sbt
 .vscode/
 
 # Project
