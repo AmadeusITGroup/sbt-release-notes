@@ -28,7 +28,7 @@ scalacOptions := Seq(
 )
 
 // override vulnerable transitive log4j-core dependency (CVE fix)
-dependencyOverrides += "org.apache.logging.log4j" % "log4j-core" % "2.25.3"
+dependencyOverrides += "org.apache.logging.log4j" % "log4j-core" % "2.25.4"
 
 // sbt plugin dependencies
 addSbtPlugin("com.github.sbt" % "sbt-release" % "1.4.0")
