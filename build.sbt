@@ -31,7 +31,7 @@ scalacOptions := Seq(
 dependencyOverrides += "org.apache.logging.log4j" % "log4j-core" % "2.25.4"
 
 // sbt plugin dependencies
-addSbtPlugin("com.github.sbt" % "sbt-release" % "1.4.0")
+addSbtPlugin("com.github.sbt" % "sbt-release" % "1.5.0")
 
 // scripted tests configuration
 scriptedBufferLog := false
